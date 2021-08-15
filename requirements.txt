@@ -1,4 +1,6 @@
 base58==2.0.1
 ecdsa==0.16.1
 six==1.15.0
-urllib3==1.26.2
+urllib3==1.25.11
+aiohttp==3.7.3
+bs4==0.0.1
