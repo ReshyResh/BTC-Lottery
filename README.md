@@ -12,6 +12,8 @@ There are two main scripts, `BTC_Lottery_Create.py` will generate a random priva
 
 The second script `BTC_Lottery_From_List.py` will take in a list of dynamically generated private and public keys (In this case [cryptoguru](https://lbc.cryptoguru.org/dio/) and test every single wallet in that page for balance. HTTP requests are asynchronous, so consider adding a timeout to not get flagged as spam by the blockchain API. (Faster script)
 
+The script `BTC_lottery_Single_Page.py` is just for proof or testing lucky numbers. It works like the second one, but with a page number of your choice. This is useful to check that the script is working as intended, you could for example try page no. `412146261462724578030299224086806743063916127103968361179779786746970751006` and see the script catch a wallet with transactions on it.
+
 # First time run
  - Make sure you have Python 3 or higher installed and setup as OS PATH.
  - Run 'pip install -r -requirements.txt' on the same folder.
