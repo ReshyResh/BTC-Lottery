@@ -4,6 +4,9 @@ import time
 from bs4 import BeautifulSoup
 import urllib.request,requests,json
 from random import randrange
+import winsound
+frequency = 2500  # Set Frequency To 2500 Hertz
+duration = 9000  # Set Duration To 1000 ms == 1 second
 i=0
 #api_key = "Tg Api Key here"
 #chat_id = "Tg chat id here"
@@ -27,6 +30,7 @@ async def get(
             print ("Writing to loot.txt...")
             lootxt = open("loot.txt", 'a')
             lootxt.write(loot)
+            winsound.Beep(frequency, duration)
             lootxt.close()
             #s = "Collision found at address: "+add+"\nPage no. :"+str(rand)+"\n"
             #s.replace(" ", "%20")
