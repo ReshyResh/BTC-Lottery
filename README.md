@@ -2,6 +2,12 @@
 
 ### Simple Python script for generating Bitcoin addresses and checking them for balance on the blockchain.
 
+# Update
+
+Old scripts are outdated, I've updated a more efficient version that allows for a single call to check multiple addresses and a timeout to not get flagged as spam by the blockchain API, as well as the option to have the bot send a collision to your Telegram bot. Check the `Async_Test_Incremental.py` script for more info.
+
+# Idea
+
 As of 2021, there are over 10m bitcoins ($85b) accumulated in dormant bitcoin addresses with no outgoing transactions at all since the Satoshi era, so these scripts are more or less like playing the lottery with an infinite amount of attempts.
 
 Needless to say, you're more likely to throw random mechanical parts off a cliff and come down to a fully working car rather than finding a collision, but you're still free to try! 👀
